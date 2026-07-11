@@ -13,6 +13,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .img-head {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/1.jpeg");
     height: 100vh;
@@ -36,6 +40,8 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-left: 100px;
+
 }
 
 .row {
@@ -185,6 +191,7 @@ h3 {
     gap: 20px;
     padding: 10px;
     margin: 20px;
+    overflow: hidden;
 }
 
 .meals-showcase li {
@@ -196,6 +203,7 @@ h3 {
     width: 100%;
     margin: 0;
     overflow: hidden;
+    display: flex;
 }
 
 .meal-photo img {
@@ -215,8 +223,11 @@ h3 {
 
 .works-img {
     display: flex;
-    gap: 200px;
-    margin-left: 200px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-left: 40px auto;
+    max-width: 100%;
 }
 
 .row1 img {
@@ -352,7 +363,7 @@ h3 {
     margin: 30px auto 0;
 }
 
-.testimonial blockquote {
+.testimonial h1 {
     font-size: 16px;
     font-style: italic;
     line-height: 1.6;
@@ -360,14 +371,6 @@ h3 {
     position: relative;
 }
 
-.testimonial blockquote::before {
-    content: "\201C";
-    font-size: 80px;
-    display: block;
-    line-height: 1;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: -16px;
-}
 
 .customer-info {
     display: flex;
@@ -512,197 +515,209 @@ img {
     height: auto;
 }
 
-/* ========================================= */
-/* RESPONSIVE DESIGN */
-/* ========================================= */
 
-@media only screen and (max-width: 1200px) {
-    .row,
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .hero-text-box {
-        width: 90%;
-    }
-    h1 {
-        font-size: 250%;
-    }
-    h2 {
-        font-size: 180%;
-    }
+@media screen and (max-width:768px){
+
+html{
+    font-size:16px;
 }
 
-@media only screen and (max-width: 1024px) {
-    html {
-        font-size: 56.25%;
-    }
-    .main-nav li {
-        margin-left: 20px;
-    }
-    .grid-4-cols,
-    .grid-3-cols {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-    .works-img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .row1 img {
-        width: 60%;
-    }
-    .row2 {
-        margin-top: 30px;
-    }
-    .pricing-card {
-        margin-bottom: 30px;
-    }
+.hero-text-box{
+    width:90%;
+    max-width:1140px;
+    margin-left:0;
+    text-align:center;
 }
 
-@media only screen and (max-width: 768px) {
-    html {
-        font-size: 50%;
-    }
-    nav {
-        text-align: center;
-    }
-    .logo {
-        display: block;
-        margin: 0 auto 20px;
-    }
-    .main-nav {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 0;
-    }
-    .main-nav li {
-        margin: 0;
-        list-style: none;
-    }
-    .hero-text-box {
-        width: 90%;
-        text-align: center;
-    }
-    h1 {
-        font-size: 220%;
-    }
-    .btn {
-        display: inline-block;
-        margin: 10px;
-    }
-    .span_1_of_4 {
-        width: 100% !important;
-        margin-bottom: 30px;
-    }
-    .grid-4-cols,
-    .grid-3-cols {
-        grid-template-columns: 1fr;
-    }
-    .meals-showcase {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .meal-photo img {
-        width: 100%;
-    }
-    .works-img {
-        flex-direction: column;
-    }
-    .row1 img {
-        width: 80%;
-    }
-    .btn-app img {
-        width: 150px;
-    }
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .footer-nav,
-    .social-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.hero-text-box h1{
+    font-size:2rem;
+    line-height:1.4;
 }
 
-@media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 180%;
-        line-height: 1.3;
-    }
-    h2 {
-        font-size: 150%;
-    }
-    .long-copy {
-        width: 100%;
-    }
-    .hero-text-box {
-        padding: 20px;
-    }
-    .btn {
-        display: block;
-        width: 80%;
-        margin: 15px auto;
-        text-align: center;
-    }
-    .meals-showcase {
-        grid-template-columns: 1fr;
-    }
-    .city-img {
-        width: 100%;
-    }
-    .customer-photo {
-        width: 60px;
-        height: 60px;
-    }
-    .pricing-card {
-        width: 100%;
-    }
-    .plan-action .btn {
-        width: 100%;
-    }
+.row-nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
-@media only screen and (max-width: 480px) {
-    html {
-        font-size: 45%;
-    }
-    .logo {
-        width: 120px;
-    }
-    .hero-text-box {
-        width: 95%;
-    }
-    .row,
-    .container {
-        width: 95%;
-    }
-    .works-step {
-        flex-direction: column;
-        text-align: center;
-    }
-    .works-step div {
-        margin-bottom: 10px;
-    }
-    .btn-app img {
-        width: 130px;
-    }
-    .footer-nav,
-    .social-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .copyright {
-        text-align: center;
-        font-size: 1.4rem;
-    }
+.logo{
+    height:80px;
+    margin:20px auto;
+}
+
+.main-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.main-nav li{
+    margin:0;
+}
+
+.row{
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.meals-showcase{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.meals-showcase li{
+    width:48%;
+}
+
+.works-img{
+    flex-direction:column;
+    align-items:center;
+}
+
+.row1 img{
+    width:60%;
+    height:auto;
+}
+
+.row2{
+    text-align:center;
+}
+
+.grid-4-cols{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.grid-3-cols{
+    grid-template-columns:1fr;
+}
+
+.section-pricing .grid-3-cols{
+    grid-template-columns:1fr;
+}
+
+.flex-container{
+    flex-direction:column;
+    gap:20px;
+}
+
+.footer-nav,
+.social-links{
+    justify-content:center;
+}
+
+}
+
+@media screen and (max-width:480px){
+
+html{
+    font-size:14px;
+}
+
+.img-head{
+    height:80vh;
+}
+
+.hero-text-box{
+    width:95%;
+    max-width:100%;
+    padding:0 15px;
+    margin-left:0;
+    text-align:center;
+}
+
+.hero-text-box h1{
+    font-size:1.6rem;
+    line-height:1.5;
+}
+
+.btn:link,
+.btn:visited{
+    display:block;
+    width:80%;
+    margin:15px auto;
+    text-align:center;
+}
+
+.logo{
+    display: flex;
+    height:70px;
+    margin:20px auto;
+}
+
+.main-nav{
+    align-items:center;
+    margin:15px 0;
+}
+
+.main-nav li{
+    margin:10px 0;
+}
+
+.row{
+    grid-template-columns:1fr;
+}
+
+.meals-showcase{
+    display:flex;
+    flex-direction:column;
+}
+
+.meals-showcase li{
+    width:100%;
+}
+
+.meal-photo img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.row1 img{
+    width:80%;
+    height:auto;
+}
+
+.works-step{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+
+.btn-app img{
+    width:130px;
+    margin:10px;
+}
+
+.grid-4-cols{
+    grid-template-columns:1fr;
+}
+
+.grid-3-cols{
+    grid-template-columns:1fr;
+}
+
+.section-pricing .grid-3-cols{
+    grid-template-columns:1fr;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-nav,
+.social-links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.copyright{
+    text-align:center;
+    font-size:14px;
+}
+
 }
