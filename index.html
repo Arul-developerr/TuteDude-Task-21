@@ -3,317 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Food Project</title>
-    <link rel="stylesheet" href="normalize.css">
+    <title>Omni Food</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <div class="img-head">
-            <nav>
-                
-                <div class="row-nav">
-                    <img class="logo" src="img/2.png" alt="Omnifood Logo">
-                    <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our cities</a></li>
-                        <li><a href="#">Sign-up</a></li>
-                    </ul>
-                </div>
-            </nav>
-                <div class="hero-text-box">
-                    <h1>Goodbye junk food<br>Hello super healthy food</h1>
-                    <a class="btn btn-full" href="#">I'm Hungry</a>
-                    <a class="btn btn-ghost" href="#">Show me more</a>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/2.png" alt="Logo">
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Food Delivery</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Cities</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero">
+            <h1>
+                Goodbye Junk Food <br>
+                Hello Healthy Food
+            </h1>
+            <div class="buttons">
+                <a href="#" class="btn1">I'm Hungry</a>
+                <a href="#" class="btn2">Show Me More</a>
             </div>
         </div>
     </header>
 
-    <section class="section-features">
-        <div class="row1">
-            <h2>Get food fast &mdash; Not fast food</h2>
-            <p class="long-copy">
-                Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!
-            </p>
-        </div>
-        <div class="row">
-            <div class="col span_1_of_4 box">
-                <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
-                <h3>Up to 365 days/year</h3>
+    <section class="features">
+        <h2>Get Food Fast — Not Fast Food</h2>
+        <p class="text">
+            Hello, we're Omnifood. We know you're busy every day.
+            So we deliver tasty and healthy food directly to your home.
+        </p>
+
+        <div class="feature-box">
+            <div class="box">
+                <i class="fa-solid fa-infinity"></i>
+                <h3>365 Days</h3>
                 <p>
-                    Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+                    You can order food every day of the year.
+                    Fresh food anytime.
                 </p>
             </div>
-            <div class="col span_1_of_4 box">
-                <ion-icon class="icon-big" name="alarm-outline"></ion-icon>
-                <h3>Ready in 20 minutes</h3>
+
+            <div class="box">
+                <i class="fa-solid fa-clock"></i>
+                <h3>20 Minutes</h3>
                 <p>
-                    You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                    Your food will reach you within twenty minutes after ordering.
                 </p>
             </div>
-            <div class="col span_1_of_4 box">
-                <ion-icon class="icon-big" name="fast-food-outline"></ion-icon>
-                <h3>100% organic</h3>
+
+            <div class="box">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Organic Food</h3>
                 <p>
-                    All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+                    We always use fresh vegetables and healthy ingredients.
                 </p>
             </div>
-            <div class="col span_1_of_4 box">
-                <ion-icon class="icon-big" name="cart-outline"></ion-icon>
-                <h3>Order anything</h3>
+
+            <div class="box">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Order Anything</h3>
                 <p>
-                    We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+                    Choose your favourite food from our large menu.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section-meals">
-        <div class="section-meal">
-            <ul class="meals-showcase">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="img/1 (1).jpeg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="img/1 (2).jpeg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="img/1 (3).jpeg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="img/1 (4).jpeg" alt="food-img">
-                    </figure>
-                </li>
-            </ul>
-            <ul class="meals-showcase">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="img/1 (5).jpeg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="img/1 (6).jpeg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="img/1 (7).jpeg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="img/1 (8).jpeg" alt="food-img">
-                    </figure>
-                </li>
-            </ul>
+    <section class="food">
+        <div class="food-row">
+            <img src="img/1 (1).jpeg" alt="Food">
+            <img src="img/1 (2).jpeg" alt="Food">
+            <img src="img/1 (3).jpeg" alt="Food">
+            <img src="img/1 (4).jpeg" alt="Food">
+        </div>
+
+        <div class="food-row">
+            <img src="img/1 (5).jpeg" alt="Food">
+            <img src="img/1 (6).jpeg" alt="Food">
+            <img src="img/1 (7).jpeg" alt="Food">
+            <img src="img/1 (8).jpeg" alt="Food">
         </div>
     </section>
 
-    <section class="section-steps">
-        <div class="row1">
-            <h2>How it works &mdash; Simple as 1,2,3</h2>
-        </div>
-        <div class="works-img">
-            <div class="row1">
-                <img src="img/3.jpeg" alt="App screen">
+    <section class="work">
+        <h2>How It Works</h2>
+        <div class="work-main">
+            <div class="mobile">
+                <img src="img/3.jpeg" alt="Mobile">
             </div>
-            <div class="row2">
-                <div class="works-step">
-                    <div>1</div>
-                    <p>Choose plan that fits best for your need and sign-up today</p>
-                </div>
-                <div class="works-step">
-                    <div>2</div>
-                    <p>Pay for the plan and download the app</p>
-                </div>
-                <div class="works-step">
-                    <div>3</div>
-                    <p>You are done, start ordering</p>
-                </div>
-                <a href="#" class="btn-app"><img src="img/3 (1).png" alt="Download on App Store"></a>
-                <a href="#" class="btn-app"><img src="img/3 (2).png" alt="Get it on Google Play"></a>
-            </div>
-        </div>
-    </section>
 
-    <section class="section-cities">
-        <div class="container1">
-            <h2 class="heading-secondary">We're currently in these cities</h2>
-        </div>
-        <div class="container grid grid-4-cols">
-            <div class="city-card">
-                <img src="img/Lisbon.jpeg" alt="Lisbon" class="city-img">
-                <h3 class="heading-tertiary">Lisbon</h3>
-                <ul class="city-details">
-                    <li><i class="fa-solid fa-user icon"></i> 1600+ Happy Eaters</li>
-                    <li><i class="fa-solid fa-star icon"></i> 50+ Chefs</li>
-                    <li><i class="fa-brands fa-twitter icon"></i> <a href="#" class="twitter-link">@omnifood_lx</a></li>
-                </ul>
-            </div>
-            <div class="city-card">
-                <img src="img/London.jpeg" alt="London" class="city-img">
-                <h3 class="heading-tertiary">London</h3>
-                <ul class="city-details">
-                    <li><i class="fa-solid fa-user icon"></i> 1600+ Happy Eaters</li>
-                    <li><i class="fa-solid fa-star icon"></i> 50+ Chefs</li>
-                    <li><i class="fa-brands fa-twitter icon"></i> <a href="#" class="twitter-link">@omnifood_ld</a></li>
-                </ul>
-            </div>
-            <div class="city-card">
-                <img src="img/Berlin.jpeg" alt="Berlin" class="city-img">
-                <h3 class="heading-tertiary">Berlin</h3>
-                <ul class="city-details">
-                    <li><i class="fa-solid fa-user icon"></i> 1400+ Happy Eaters</li>
-                    <li><i class="fa-solid fa-star icon"></i> 70+ Chefs</li>
-                    <li><i class="fa-brands fa-twitter icon"></i> <a href="#" class="twitter-link">@omnifood_br</a></li>
-                </ul>
-            </div>
-            <div class="city-card">
-                <img src="img/San-Francisco.jpeg" alt="San Francisco" class="city-img">
-                <h3 class="heading-tertiary">San Francisco</h3>
-                <ul class="city-details">
-                    <li><i class="fa-solid fa-user icon"></i> 1800+ Happy Eaters</li>
-                    <li><i class="fa-solid fa-star icon"></i> 50+ Chefs</li>
-                    <li><i class="fa-brands fa-twitter icon"></i> <a href="#" class="twitter-link">@omnifood_sf</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <div class="steps">
+                <div class="step">
+                    <div class="number">1</div>
+                    <p>Choose your favourite plan and create your account.</p>
+                </div>
 
-    <section class="section-testimonials">
-        <div class="container">
-            <h2 class="heading-secondary1">Our customers can't live without us</h2>
-        </div>
-        <div class="container grid grid-3-cols">
-            <div class="testimonial">
-                <h1>
-                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-                </h1>
-                <cite class="customer-info">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alberto Duncan" class="customer-photo">
-                    Alberto Duncan
-                </cite>
-            </div>
-            <div class="testimonial">
-                <h1>
-                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omnifood. Me and my family are so in love!
-                </h1>
-                <cite class="customer-info">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Joana Silva" class="customer-photo">
-                    Joana Silva
-                </cite>
-            </div>
-            <div class="testimonial">
-                <h1>
-                    I was looking for a quick and easy food delivery service in San Francisco. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
-                </h1>
-                <cite class="customer-info">
-                    <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Milton Chapman" class="customer-photo">
-                    Milton Chapman
-                </cite>
-            </div>
-        </div>
-    </section>
+                <div class="step">
+                    <div class="number">2</div>
+                    <p>Pay online and download the mobile application.</p>
+                </div>
 
-    <section class="section-pricing">
-        <div class="container">
-            <h2 class="heading-secondary">Start eating healthy today</h2>
-        </div>
-        <div class="container grid grid-3-cols">
-            <div class="pricing-card">
-                <div class="plan-header">
-                    <h3 class="plan-title">Premium</h3>
-                    <p class="plan-price">$399 <span>/ month</span></p>
-                    <p class="plan-price-meal">That's only 13.90$ per meal</p>
+                <div class="step">
+                    <div class="number">3</div>
+                    <p>Start ordering healthy food every day.</p>
                 </div>
-                <div class="plan-features">
-                    <ul>
-                        <li><i class="fa-solid fa-check icon"></i> 1 meal everyday</li>
-                        <li><i class="fa-solid fa-check icon"></i> Order 24*7</li>
-                        <li><i class="fa-solid fa-check icon"></i> Access to newest creations</li>
-                        <li><i class="fa-solid fa-check icon"></i> Free delivery</li>
-                    </ul>
-                </div>
-                <div class="plan-action">
-                    <a href="#" class="btn btn-full">Sign up</a>
-                </div>
-            </div>
-            <div class="pricing-card">
-                <div class="plan-header">
-                    <h3 class="plan-title">Pro</h3>
-                    <p class="plan-price">$199 <span>/ month</span></p>
-                    <p class="plan-price-meal">That's only 10.90$ per meal</p>
-                </div>
-                <div class="plan-features">
-                    <ul>
-                        <li><i class="fa-solid fa-check icon"></i> 1 meal 10 days</li>
-                        <li><i class="fa-solid fa-check icon"></i> Order 24*7</li>
-                        <li><i class="fa-solid fa-check icon"></i> Access to newest creations</li>
-                        <li><i class="fa-solid fa-check icon"></i> Free delivery</li>
-                    </ul>
-                </div>
-                <div class="plan-action">
-                    <a href="#" class="btn btn-ghost">Sign up</a>
-                </div>
-            </div>
-            <div class="pricing-card">
-                <div class="plan-header">
-                    <h3 class="plan-title">Starter</h3>
-                    <p class="plan-price">$19 <span>/ meal</span></p>
-                    <p class="plan-price-meal">&nbsp;</p>
-                </div>
-                <div class="plan-features">
-                    <ul>
-                        <li><i class="fa-solid fa-check icon"></i> 1 meal month</li>
-                        <li><i class="fa-solid fa-check icon"></i> Order 24*7</li>
-                        <li><i class="fa-solid fa-xmark icon icon-cross"></i> Access to newest creations</li>
-                        <li><i class="fa-solid fa-check icon"></i> Free delivery</li>
-                    </ul>
-                </div>
-                <div class="plan-action">
-                    <a href="#" class="btn btn-ghost">Sign up</a>
+
+                <div class="store">
+                    <img src="img/3 (1).png" alt="App Store">
+                    <img src="img/3 (2).png" alt="Google Play">
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="section-footer">
-        <div class="container flex-container">
-            <ul class="footer-nav">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">iOS App</a></li>
-                <li><a href="#">Android App</a></li>
-            </ul>
-            <ul class="social-links">
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
+    <section class="cities">
+        <h2>Our Cities</h2>
+        <div class="city-box">
+            <div class="city">
+                <img src="img/Lisbon.jpeg" alt="Lisbon">
+                <h3>Lisbon</h3>
+                <p>1600+ Happy Customers</p>
+                <p>60+ Chefs</p>
+                <p>@omnifood_lx</p>
+            </div>
+
+            <div class="city">
+                <img src="img/London.jpeg" alt="London">
+                <h3>London</h3>
+                <p>1400+ Happy Customers</p>
+                <p>50+ Chefs</p>
+                <p>@omnifood_ld</p>
+            </div>
+
+            <div class="city">
+                <img src="img/Berlin.jpeg" alt="Berlin">
+                <h3>Berlin</h3>
+                <p>1700+ Happy Customers</p>
+                <p>65+ Chefs</p>
+                <p>@omnifood_br</p>
+            </div>
+
+            <div class="city">
+                <img src="img/San-Francisco.jpeg" alt="San Francisco">
+                <h3>San Francisco</h3>
+                <p>1800+ Happy Customers</p>
+                <p>70+ Chefs</p>
+                <p>@omnifood_sf</p>
+            </div>
         </div>
-        <div class="container">
-            <p class="copyright">
-                Copyright &copy; 2015 by Omnifood. All rights reserved.
-            </p>
+    </section>
+
+    <section class="review">
+        <h2>Customer Reviews</h2>
+        <div class="review-box">
+            <div class="person">
+                <p>Omnifood is amazing. Healthy food and very fast delivery.</p>
+                <h4>Alberto Duncan</h4>
+            </div>
+            
+            <div class="person">
+                <p>The food is always fresh. My family loves it.</p>
+                <h4>Joana Silva</h4>
+            </div>
+            
+            <div class="person">
+                <p>Best food delivery service I have ever used.</p>
+                <h4>Milton Chapman</h4>
+            </div>
         </div>
+    </section>
+
+    <section class="price">
+        <h2>Pricing Plans</h2>
+        <div class="price-box">
+            <div class="card">
+                <h3>Premium</h3>
+                <h1>$399</h1>
+                <p>1 Meal Every Day</p>
+                <p>Free Delivery</p>
+                <p>24/7 Support</p>
+                <a href="#">Sign Up</a>
+            </div>
+
+            <div class="card">
+                <h3>Pro</h3>
+                <h1>$199</h1>
+                <p>10 Meals Per Month</p>
+                <p>Free Delivery</p>
+                <p>24/7 Support</p>
+                <a href="#">Sign Up</a>
+            </div>
+
+            <div class="card">
+                <h3>Starter</h3>
+                <h1>$19</h1>
+                <p>1 Meal</p>
+                <p>Free Delivery</p>
+                <p>Email Support</p>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-menu">
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </div>
+        <p>Copyright © 2026 Omni Food</p>
     </footer>
-
-    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
